@@ -1,6 +1,5 @@
 package com.escobar.marketplace;
 
-import com.escobar.marketplace.controller.MusicController;
 import javafx.application.Application;
 
 public class App {

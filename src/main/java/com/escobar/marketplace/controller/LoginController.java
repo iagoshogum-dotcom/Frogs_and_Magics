@@ -24,7 +24,7 @@ public class LoginController {
     public void initialize() {
 
         String caminho = getClass()
-                .getResource("/com/escobar/marketplace/videos/carros.mp4")
+                .getResource("/com/escobar/marketplace/videos/introduçaoVideo.mp4")
                 .toExternalForm();
 
         Media media = new Media(caminho);
@@ -32,8 +32,6 @@ public class LoginController {
         mediaPlayer = new MediaPlayer(media);
 
         mediaView.setMediaPlayer(mediaPlayer);
-
-        mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
 
         mediaPlayer.play();
     }

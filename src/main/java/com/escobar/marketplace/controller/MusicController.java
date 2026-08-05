@@ -11,7 +11,7 @@ public class MusicController {
         if (mediaPlayer == null) {
 
             String caminho = MusicController.class
-                    .getResource("/com/escobar/marketplace/music/rise.mp3")
+                    .getResource("/com/escobar/marketplace/music/Transformation.mp3")
                     .toExternalForm();
 
             System.out.println("Música encontrada em: " + caminho);

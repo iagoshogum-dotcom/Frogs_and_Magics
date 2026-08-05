@@ -16,10 +16,8 @@ public class LoginApplication extends Application {
         MusicController.iniciarMusica();
         FXMLLoader fxmlLoader = new FXMLLoader(LoginApplication.class.getResource("login.fxml"));
         Parent root = fxmlLoader.load();
-
         Scene scene = new Scene(root, 600, 400);
-        stage.setTitle("ESCOBAR MOTORS");
-        stage.getIcons().add( new Image(LoginApplication.class.getResourceAsStream("img/carro.jpg")));
+        stage.setTitle("frogs and magics");
         stage.setScene(scene);
         stage.show();
     }
