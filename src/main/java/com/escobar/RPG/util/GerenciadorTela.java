@@ -1,5 +1,6 @@
 package com.escobar.RPG.util;
 
+import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -22,8 +23,8 @@ public class GerenciadorTela {
         return instancia;
     }
 
-    public void trocarTela(Event event, String caminhoFXML, String titulo) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(caminhoFXML));
+    public void trocarTela(Event event, String telaFXML, String titulo) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/escobar/RPG/"+telaFXML));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
         stage.setTitle(titulo);

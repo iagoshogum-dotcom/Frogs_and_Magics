@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.escobar.RPG.controller.PersonController">
+   <children>
+      <AnchorPane opacity="0.88" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: black;">
+         <children>
+            <MediaView fx:id="mediaViewPerson" fitHeight="720.0" fitWidth="1280.0" nodeOrientation="INHERIT" preserveRatio="false" />
+            <Button fx:id="btIniciar" alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="228.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="246.0" stylesheets="@style.css" text="INICIAR JOGO" textFill="#1e1616">
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="415.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/FirstLevelButtons.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="button_introducao_FirstLevel" />
+                  <String fx:value="button_introducao_FirstLevel_hover" />
+               </styleClass></Button>
+            <Button fx:id="btConfiguracoes" alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="292.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="246.0" text="CONFIGURAÇÔES" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="415.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/FirstLevelButtons.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="button_introducao_FirstLevel" />
+                  <String fx:value="button_introducao_FirstLevel_hover" />
+               </styleClass></Button>
+            <Button fx:id="btCreditos" alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="361.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="246.0" text="CREDITOS" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="415.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/FirstLevelButtons.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="button_introducao_FirstLevel" />
+                  <String fx:value="button_introducao_FirstLevel_hover" />
+               </styleClass></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

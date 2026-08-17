@@ -1,50 +1,47 @@
 
-.butom_style1:hover{
-    -fx-background-color: black;
+.button_introducao_FirstLevel_hover:hover{
     -fx-text-fill: white;
     -fx-scale-x: 1.1;
     -fx-scale-y: 1.1;
-    -fx-effect: dropshadow(gaussian, white, 4, 0.5, 0, 0);
+    -fx-effect: dropshadow(gaussian, #9500ff, 20, 0, 0, 0);
     -fx-cursor: 👌
 }
-@font-face {
-    font-family: "PressStart2P";
-    src: url("fonts/PressStart2P-Regular.ttf");
+.txt_for_menu_dialogs {
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 10px;
+    -fx-text-fill: white;
 }
-.label_introducao {
-    -fx-font-family: "PressStart2P";
-    -fx-font-size: 40px;
-    -fx-effect: dropshadow(gaussian,black,4,0.5,0,0)
+.txt_for_menu_title {
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 30px;
+    -fx-text-fill: white;
+}
+.button_introducao_FirstLevel {
+    -fx-border-width: 2px;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 10px;
+    -fx-text-fill: white;
+
+    -fx-background-color: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.0) 0%,
+            rgba(0, 0, 0, 0.0) 100%)
 }
 
-.button_introducao {
-        -fx-background-color: linear-gradient(
-                to right,
-                black 0%,
-                black 30%,
-                rgba(0, 0, 0, 0.6) 60%,
-                transparent 100%
-        );
-
-        -fx-border-color: linear-gradient(
-                to right,
-                #D9BBA9 0%,
-                #D9BBA9 30%,
-                rgba(107, 66, 38, 0.5) 60%,
-                transparent 100%
-        );
-
-        -fx-border-width: 2px;
-        -fx-font-family: "PressStart2P";
-        -fx-font-size: 16px;
-        -fx-text-fill: white;
-}
-.button_pular-introducao {
+.button_skip_introduction {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
     -fx-text-fill: white;
-    -fx-font-family: "PressStart2P";
+    -fx-font-family: "Press Start 2P";
     -fx-font-size: 14px;
 }
+.button_skip_introduction_hover:hover {
+    -fx-text-fill: white;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(gaussian, #9500ff, 20, 0, 0, 0);
+    -fx-cursor: 👌
+}
+
 
 
