@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.media.MediaView?>
+<?import javafx.scene.paint.Color?>
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.escobar.RPG.controller.PersonController">
    <children>
       <AnchorPane opacity="0.88" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: black;">
          <children>
             <MediaView fx:id="mediaViewPerson" fitHeight="720.0" fitWidth="1280.0" nodeOrientation="INHERIT" preserveRatio="false" />
-            <ImageView fx:id="sapoWarriorSelection" fitHeight="260.0" fitWidth="250.0" layoutX="709.0" layoutY="420.0" onMouseClicked="#aoVerWarrior" onMouseDragged="#aoDesVerWarrior" pickOnBounds="true" preserveRatio="true" styleClass="chacter_selection_hover">
+            <ImageView fx:id="sapoWarriorSelection" fitHeight="260.0" fitWidth="250.0" layoutX="709.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true" styleClass="chacter_selection_hover">
                <image>
                   <Image url="@videos/sapoGuerreiroSelection.gif" />
                </image>
@@ -21,15 +25,26 @@
                   <Image url="@videos/sapoGuerreiroSelection2.gif" />
                </image>
             </ImageView>
-            <ImageView fx:id="PersonStatusWarrior" fitHeight="594.0" fitWidth="426.0" layoutX="74.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="warriorHistoria" fitHeight="648.0" fitWidth="417.0" layoutX="101.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@img/fundoPersomViewl.png" />
+                  <Image url="@img/GuerreiroHistoria.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="warriorHistoria" fitHeight="257.0" fitWidth="396.0" layoutX="87.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+            <Label fx:id="txtWarriorHistoria1" alignment="CENTER" layoutX="246.0" layoutY="439.0" prefHeight="29.0" prefWidth="95.0" styleClass="txt_for_menu_dialogs" text="GUERREIRO" />
+            <Label fx:id="txtWarriorHistoria2" alignment="TOP_CENTER" layoutX="130.0" layoutY="545.0" prefHeight="61.0" prefWidth="325.0" styleClass="txt_for_menu_dialogs" text="Provido de uma enorme força, usa sua experiencia com armas para fazer seu inimigos sucumbir diante sua presença" textAlignment="CENTER" wrapText="true" />
+            <ImageView fx:id="warrriorIcon" fitHeight="50.0" fitWidth="59.0" layoutX="270.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@img/persomViewl2.jpg" />
-               </image></ImageView>
+                  <Image url="@img/GuerreiroIcon.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Pane layoutX="750.0" layoutY="438.0" onMouseEntered="#aoVerWarrior" onMouseExited="#aoDesVerWarrior" prefHeight="187.0" prefWidth="170.0" />
          </children>
       </AnchorPane>
    </children>

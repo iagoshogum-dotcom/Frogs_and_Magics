@@ -1,6 +1,7 @@
 package com.escobar.RPG.controller;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -18,10 +19,16 @@ public class PersonController {
     private ImageView sapoWarriorSelection2;
 
     @FXML
-    private ImageView PersonStatusWarrior;
+    private ImageView warriorHistoria;
+    @FXML
+    private ImageView warrriorIcon;
 
     @FXML
-    private ImageView warriorHistoria;
+    private Label txtWarriorHistoria1;
+
+    @FXML
+    private Label txtWarriorHistoria2;
+
 
 
     private MediaPlayer mediaPlayer2;
@@ -31,8 +38,10 @@ public class PersonController {
     @FXML
     public void initialize() {
         sapoWarriorSelection2.setVisible(false);
-        PersonStatusWarrior.setVisible(false);
+        txtWarriorHistoria1.setVisible(false);
+        txtWarriorHistoria2.setVisible(false);
         warriorHistoria.setVisible(false);
+        warrriorIcon.setVisible(false);
 
         String caminho = getClass()
                 .getResource("/com/escobar/RPG/videos/videoFundoSelecao.mp4")
@@ -55,17 +64,20 @@ public class PersonController {
     public void aoVerWarrior(){
         sapoWarriorSelection.setVisible(false);
         sapoWarriorSelection2.setVisible(true);
-        PersonStatusWarrior.setVisible(true);
+        txtWarriorHistoria1.setVisible(true);
+        txtWarriorHistoria2.setVisible(true);
         warriorHistoria.setVisible(true);
+        warrriorIcon.setVisible(true);
 
     }
     @FXML
     public void aoDesVerWarrior(){
         sapoWarriorSelection.setVisible(true);
         sapoWarriorSelection2.setVisible(false);
-        PersonStatusWarrior.setVisible(false);
+        txtWarriorHistoria1.setVisible(false);
+        txtWarriorHistoria2.setVisible(false);
         warriorHistoria.setVisible(false);
-
+        warrriorIcon.setVisible(false);
     }
 
 
